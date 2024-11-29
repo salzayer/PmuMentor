@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class UserSignUp {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input fields
+        System.out.print("Enter PMU ID: ");
+        int pmuId = scanner.nextInt();
+        scanner.nextLine();  // Consume newline
+
+        System.out.print("Enter First Name: ");
+        String firstName = scanner.nextLine();
+
+        System.out.print("Enter Last Name: ");
+        String lastName = scanner.nextLine();
+
+        System.out.print("Enter Email: ");
+        String email = scanner.nextLine();
+
+        System.out.print("Enter Password: ");
+        String password = scanner.nextLine();
+
+        System.out.print("Enter Role (mentor, mentee, both): ");
+        String role = scanner.nextLine();
+
+        // Display the entered details (no saving)
+        System.out.println("\nSign Up successful!");
+        System.out.println("Welcome " + firstName + " " + lastName + "!");
+        System.out.println("PMU ID: " + pmuId);
+        System.out.println("Role: " + role);
+    }
+}
