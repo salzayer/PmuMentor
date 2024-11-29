@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class EventCreation {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        System.out.println("Create an Event:");
+        
+        System.out.print("Enter Your Mentor ID: ");
+        String mentorId = scanner.nextLine();
+        
+        System.out.print("Enter Event Name: ");
+        String eventName = scanner.nextLine();
+
+        System.out.print("Enter Event Description: ");
+        String eventDescription = scanner.nextLine();
+
+        System.out.print("Enter Event Type (e.g., Workshop, Webinar): ");
+        String eventType = scanner.nextLine();  // Event Type
+
+        System.out.print("Enter Event Date and Time (yyyy-mm-dd hh:mm): ");
+        String eventDateTime = scanner.nextLine();
+
+        System.out.print("Enter Event Location (Virtual/Physical): ");
+        String eventLocation = scanner.nextLine();
+
+        // Display event details
+        System.out.println("\nEvent Created Successfully!");
+        System.out.println("Mentor ID: " + mentorId);
+        System.out.println("Event Name: " + eventName);
+        System.out.println("Description: " + eventDescription);
+        System.out.println("Event Type: " + eventType);
+        System.out.println("Date and Time: " + eventDateTime);
+        System.out.println("Location: " + eventLocation);
+    }
+}
