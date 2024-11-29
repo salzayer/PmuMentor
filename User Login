@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class UserLogin {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        int correctPmuId;
+        String correctPassword;
+
+        
+        System.out.print("Enter PMU ID: ");
+        int inputPmuId = scanner.nextInt();
+        scanner.nextLine();  // Consume newline
+
+        System.out.print("Enter Password: ");
+        String inputPassword = scanner.nextLine();
+
+        // Check login credentials
+        if (inputPmuId == correctPmuId && inputPassword.equals(correctPassword)) {
+            System.out.println("Login successful!");
+        } else {
+            System.out.println("Invalid PMU ID or password!");
+        }
+    }
+}
